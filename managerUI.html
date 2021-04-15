@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <title>Software Cafe: Manager</title>
+
+    <link rel="stylesheet" type="text/css" href="managerUI.css">
+
+    <script type="text/javascript" src="http://code.jquery.com/jquery-1.8.2.js">
+    </script>
+    <script type="text/javascript">
+      function go(loc) { document.getElementById('op').src = loc; }
+    </script>
+  </head>
+
+  <body>
+    <header>
+      <div class="role">
+        <h1>Manager</h1>
+      </div>
+
+      <div class="name">
+        <h4>Software Cafe</h4>
+      </div>
+
+      <div class="container">
+        <div class="box"><a href="#" tabindex="1" onclick="go('mOrders.html')">
+          Orders</a></div>
+
+        <div class="box"><a href="#" tabindex="2" onclick="go('mMenu.html')">
+          Menu</a></div>
+
+        <div class="box"><a href="#" tabindex="3" onclick="go('mFinance.html')">
+          Finances</a></div>
+
+        <div class="box"><a href="#" tabindex="4" onclick="go('mMealTime.html')">
+          Meal Times</a></div>
+      </div>
+    </header>
+
+    <div class="display">
+      <div style="padding-bottom: 40%;"></div>
+      <iframe id="op" src="about:blank" height="100%" width="100%" scrolling="no" allowfullscreen></iframe>
+    </div>
+  </body>
+</html>
